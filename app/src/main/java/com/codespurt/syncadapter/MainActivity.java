@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TextView data;
 
     public static String[] nameList = {"sam", "kam", "jay", "Oscar", "juicy", "bitch", "gay"};
-    public static String[] sexList = {"male", "female"};
+    public static String[] sexList = {"male", "female", "other"};
     public static final String ACCOUNT = "default_account";
 
     @Override

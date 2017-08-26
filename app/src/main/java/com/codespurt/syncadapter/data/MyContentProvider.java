@@ -24,7 +24,7 @@ public class MyContentProvider extends ContentProvider {
     private Context context;
 
     private static final String TAG = MyContentProvider.class.getSimpleName();
-    public static String AUTHORITY = "";
+    public static String AUTHORITY = "com.codespurt.syncadapter";
     public static String BASE_PATH = "CodeSpurt";
 
     private static final int friends = 100;
@@ -50,7 +50,7 @@ public class MyContentProvider extends ContentProvider {
     public boolean onCreate() {
         context = getContext();
         helper = new MySQLiteHelper(context);
-        AUTHORITY = context.getResources().getString(R.string.content_authority);
+        // AUTHORITY = context.getResources().getString(R.string.content_authority);
         return true;
     }
 
