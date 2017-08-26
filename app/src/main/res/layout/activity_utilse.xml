@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3"
+    tools:context="com.codespurt.syncadapter.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button_addaccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Account" />
+
+        <Button
+            android:id="@+id/button_requestsync"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Request Sync" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button_query_cp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Query using Content Provider" />
+
+        <Button
+            android:id="@+id/button_addrandomfive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Random" />
+
+        <Button
+            android:id="@+id/button_recreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recreate" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textview_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        android:text="-----------------"
+        android:textSize="12sp" />
+
+</LinearLayout>

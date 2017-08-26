@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SyncAdapter</string>
+
+    <string name="account_type">codespurt.syncadapter</string>
+    <string name="account_auth_token">codespurt.syncadapter</string>
+    <string name="account_auth_token_type">authtokentype.codespurt</string>
+    <string name="content_authority">com.codespurt.syncadapter</string>
+</resources>

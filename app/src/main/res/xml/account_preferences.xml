@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Preferences" />
+
+    <Preference android:title="Setting 1">
+        <intent
+            android:action="com.codespurt.syncadapter.isdebug"
+            android:targetClass="com.codespurt.syncadapter.AuthSettingActivity"
+            android:targetPackage="com.codespurt.syncadapter" />
+    </Preference>
+
+    <CheckBoxPreference
+        android:key="is_debug"
+        android:summary="Connect to a debug server"
+        android:title="Use debug server" />
+
+    <SwitchPreference
+        android:key="logs_verbose"
+        android:summary="Show debug logs on LogCat"
+        android:title="Debug Logs" />
+</PreferenceScreen>
